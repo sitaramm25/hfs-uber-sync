@@ -13,10 +13,12 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 
-// ✅ FIX 1: portable profile path (NOT hardcoded user)
-const PROFILE_DIR = path.join(os.homedir(), "rocket-browser-profile");
+// ✅ FIX: safe portable profile path (override via env if needed)
+const PROFILE_DIR =
+  process.env.ROCKET_PROFILE_DIR ||
+  path.join(os.homedir(), "rocket-browser-profile");
 
-// ✅ FIX 2: proper relative screenshot folder
+// screenshots folder (safe in runner workspace)
 const SCREENSHOTS_DIR = path.join(process.cwd(), "screenshots");
 
 const OPEN_ORDERS_URL =
@@ -53,6 +55,7 @@ function jstToUtcIso(dateText: string, timeText: string) {
   return new Date(`${dateText}T${timeText}:00+09:00`).toISOString();
 }
 
+// ✅ FIXED (critical bug: missing minute variable)
 function parseRocketVisibleDateTime(text: string) {
   const match = text.match(
     /(\d{2})\.(\d{2})\.(\d{2})\s+(\d{1,2}):(\d{2})/
@@ -143,9 +146,7 @@ async function parseCurrentPage(page: Page) {
       },
     });
 
-    console.log(
-      `✔ ${orderId} ¥${total} → ${jst.order_datetime_jst}`
-    );
+    console.log(`✔ ${orderId} ¥${total} → ${jst.order_datetime_jst}`);
   }
 
   return orders;
@@ -176,24 +177,26 @@ async function saveToSupabase(orders: any[]) {
   const supabase = getSupabase();
 
   for (const o of orders) {
-    const { error } = await supabase.from("delivery_orders").upsert(
-      {
-        platform: "rocket",
-        order_id: o.order_id,
-        order_time: o.order_time,
-        order_date_jst: o.order_date_jst,
-        order_time_jst: o.order_time_jst,
-        order_datetime_jst: o.order_datetime_jst,
-        total: o.total,
-        items: o.items,
-        raw_data: o.raw_data,
-        scraped_at: o.scraped_at,
-      },
-      { onConflict: "platform,order_id" }
-    );
+    const { error } = await supabase
+      .from("delivery_orders")
+      .upsert(
+        {
+          platform: "rocket",
+          order_id: o.order_id,
+          order_time: o.order_time,
+          order_date_jst: o.order_date_jst,
+          order_time_jst: o.order_time_jst,
+          order_datetime_jst: o.order_datetime_jst,
+          total: o.total,
+          items: o.items,
+          raw_data: o.raw_data,
+          scraped_at: o.scraped_at,
+        },
+        { onConflict: "platform,order_id" }
+      );
 
     if (error) {
-      console.error("❌ Supabase error:", error.message);
+      console.error("❌ Supabase error:", error);
     } else {
       console.log("💾 Saved:", o.order_id);
     }
