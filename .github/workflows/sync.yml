@@ -1,0 +1,22 @@
+name: Sync Pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - run: npx tsx uber-sync.ts
+      - run: npx tsx rocket-sync.ts
+      - run: npx tsx menu-sync.ts
