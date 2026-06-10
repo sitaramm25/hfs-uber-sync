@@ -6,7 +6,6 @@ on:
 
 jobs:
   windows-sync:
-    name: Windows Sync
     runs-on: [self-hosted, Windows, X64]
 
     steps:
@@ -18,20 +17,11 @@ jobs:
 
       - run: npm install
 
-      - name: Run Rocket Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx rocket-sync.ts
-
-      - name: Run Menu Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx menu-sync.ts
+      - run: npx tsx uber-sync.ts
+      - run: npx tsx rocket-sync.ts
+      - run: npx tsx menu-sync.ts
 
   mac-sync:
-    name: Mac Sync
     runs-on: [self-hosted, macOS, X64]
 
     steps:
@@ -43,20 +33,6 @@ jobs:
 
       - run: npm install
 
-      - name: Run Rocket Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx rocket-sync.ts
-
-      - name: Run Menu Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx menu-sync.ts
-
-      - name: Run Uber Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx uber-sync.ts
+      - run: npx tsx uber-sync.ts
+      - run: npx tsx rocket-sync.ts
+      - run: npx tsx menu-sync.ts
