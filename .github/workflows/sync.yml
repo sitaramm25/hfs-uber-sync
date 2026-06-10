@@ -5,8 +5,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync:
-    runs-on: self-hosted
+  windows-sync:
+    name: Windows Sync
+    runs-on: [self-hosted, Windows, X64]
 
     steps:
       - uses: actions/checkout@v4
@@ -17,6 +18,20 @@ jobs:
 
       - run: npm install
 
-      - run: npx tsx uber-sync.ts
-      - run: npx tsx rocket-sync.ts
-      - run: npx tsx menu-sync.ts
+      - run: npx tsx scripts/rocket-sync.ts
+      - run: npx tsx scripts/menu-sync.ts
+
+  mac-sync:
+    name: Mac Sync
+    runs-on: [self-hosted, macOS, X64]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - run: npx tsx scripts/uber-sync.ts
