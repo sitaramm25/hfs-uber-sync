@@ -22,7 +22,7 @@ jobs:
       - run: npx tsx menu-sync.ts
 
   mac-sync:
-    runs-on: [self-hosted, macOS, X64]
+    runs-on: [self-hosted, macOS]
 
     steps:
       - uses: actions/checkout@v4
