@@ -1,25 +1,27 @@
-name: Sync Pipeline
+windows-sync:
+  name: Windows Sync
+  runs-on: [self-hosted, Windows, X64]
 
-on:
-  push:
-  workflow_dispatch:
+  steps:
+    - uses: actions/checkout@v4
 
-jobs:
-  windows-sync:
-    name: Windows Sync
-    runs-on: [self-hosted, Windows, X64]
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
 
-    steps:
-      - uses: actions/checkout@v4
+    - run: npm install
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
+    - name: Run Rocket Sync
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      run: npx tsx rocket-sync.ts
 
-      - run: npm install
-
-      - run: npx tsx rocket-sync.ts
-      - run: npx tsx menu-sync.ts
+    - name: Run Menu Sync
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      run: npx tsx menu-sync.ts
 
   mac-sync:
     name: Mac Sync
