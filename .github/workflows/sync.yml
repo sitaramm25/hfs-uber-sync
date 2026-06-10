@@ -18,8 +18,8 @@ jobs:
 
       - run: npm install
 
-      - run: npx tsx scripts/rocket-sync.ts
-      - run: npx tsx scripts/menu-sync.ts
+      - run: npx tsx rocket-sync.ts
+      - run: npx tsx menu-sync.ts
 
   mac-sync:
     name: Mac Sync
@@ -34,4 +34,6 @@ jobs:
 
       - run: npm install
 
+      - run: npx tsx scripts/rocket-sync.ts
+      - run: npx tsx scripts/menu-sync.ts
       - run: npx tsx scripts/uber-sync.ts
