@@ -1,36 +1,41 @@
-name: Sync Pipeline
+name: Windows Sync Pipeline
 
 on:
-push:
-workflow_dispatch:
+  push:
+  workflow_dispatch:
 
 jobs:
-windows-sync:
-runs-on: [self-hosted, Windows, X64]
+  windows-sync:
+    runs-on: [self-hosted, Windows, X64]
 
-steps:
-  - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-  - uses: actions/setup-node@v4
-    with:
-      node-version: 22
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
-  - run: npm install
+      - run: npm install
 
-  - name: Restore Playwright auth
-    shell: pwsh
-    run: |
-      New-Item -ItemType Directory -Force playwright/.auth
-      Copy-Item `
-        C:\Users\highf\Downloads\hfs\playwright\.auth\user.json `
-        playwright/.auth\user.json `
-        -Force
+      # Restore Playwright auth from your local runner machine
+      - name: Restore Playwright auth
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force playwright/.auth
+          Copy-Item `
+            C:\Users\highf\Downloads\hfs\playwright\.auth\user.json `
+            playwright\.auth\user.json `
+            -Force
 
-  - name: Verify auth file
-    shell: pwsh
-    run: |
-      Test-Path playwright/.auth/user.json
+      - name: Verify auth
+        shell: pwsh
+        run: Test-Path playwright\.auth\user.json
 
-  - run: npx tsx uber-sync.ts
-  - run: npx tsx rocket-sync.ts
-  - run: npx tsx menu-sync.ts
+      - name: Run Uber Sync
+        run: npx tsx uber-sync.ts
+
+      - name: Run Rocket Sync
+        run: npx tsx rocket-sync.ts
+
+      - name: Run Menu Sync
+        run: npx tsx menu-sync.ts
