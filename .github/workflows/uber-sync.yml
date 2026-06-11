@@ -1,12 +1,13 @@
 name: Uber Sync
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "**.yml"
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min (adjust later)
+
+concurrency:
+  group: uber-sync
+  cancel-in-progress: true
 
 jobs:
   uber-sync:
@@ -21,6 +22,14 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      - name: Restore auth
+        shell: pwsh
+        run: |
+          Copy-Item `
+            C:\Users\highf\Downloads\hfs\playwright\.auth\user.json `
+            playwright\.auth\user.json `
+            -Force
 
       - name: Run Uber Sync
         run: npx tsx uber-sync.ts

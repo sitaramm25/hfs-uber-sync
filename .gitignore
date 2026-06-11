@@ -1,5 +1,13 @@
-node_modules
 .env
-playwright/.auth
-screenshots
-actions-runner/
+.env.local
+
+playwright/.auth/
+rocket-browser-profile/
+
+output/
+screenshots/
+
+*.png
+uber-body.txt
+uber-page.html
+uber-orders.json
