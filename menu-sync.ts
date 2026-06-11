@@ -7,21 +7,20 @@ const AUTH_FILE = "playwright/.auth/menu.json"
 const MENU_REPORT_URL =
   "https://management.console.menu.inc/chain/orderReport/list?target_month=2026-06&shop_id=143836"
 
-const supabaseUrl = process.env.SUPABASE_URL
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+const supabaseUrl = process.env.SUPABASE_URL!
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
 
 if (!supabaseUrl || !supabaseKey) {
   throw new Error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY")
 }
 
 /**
- * Supabase client (Node 20 safe)
+ * ✅ IMPORTANT FIX:
+ * Do NOT pass realtime config at all.
+ * Supabase JS will still try to initialize it internally in Node 20.
+ * Removing it fully is the safest solution.
  */
-const supabase = createClient(supabaseUrl, supabaseKey, {
-  realtime: {
-    enabled: false
-  }
-})
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 function jstToUtcIso(dateText: string, timeText: string) {
   return new Date(`${dateText}T${timeText}:00+09:00`).toISOString()
@@ -136,10 +135,7 @@ async function main() {
       })
 
       console.log(
-        `✔ Parsed ${orderId} JST ${orderDate} ${orderTimeText} → UTC ${jstToUtcIso(
-          orderDate,
-          orderTimeText
-        )} ¥${total}`
+        `✔ Parsed ${orderId} ${orderDate} ${orderTimeText} ¥${total}`
       )
     }
 
