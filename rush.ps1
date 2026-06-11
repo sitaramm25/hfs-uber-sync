@@ -1,0 +1,1 @@
+gh workflow run "Sync Pipeline" --ref main

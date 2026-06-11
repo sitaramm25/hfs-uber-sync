@@ -10,31 +10,17 @@ on:
 
 jobs:
   uber-sync:
-    if: github.actor != 'github-actions[bot]'
     runs-on: [self-hosted, windows]
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Restore Uber auth
-        shell: pwsh
-        run: |
-          New-Item -ItemType Directory -Force playwright/.auth
-
-          Copy-Item `
-            "$env:GITHUB_WORKSPACE\playwright\.auth\user.json" `
-            "playwright\.auth\user.json" `
-            -Force
+      - run: npm ci
 
       - name: Run Uber Sync
         run: npx tsx uber-sync.ts
