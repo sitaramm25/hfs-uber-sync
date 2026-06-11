@@ -1,11 +1,11 @@
-name: Windows Sync Pipeline
+name: Uber Sync
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  windows-sync:
+  uber-sync:
     runs-on: [self-hosted, Windows, X64]
 
     steps:
@@ -17,8 +17,7 @@ jobs:
 
       - run: npm install
 
-      # Restore Playwright auth from your local runner machine
-      - name: Restore Playwright auth
+      - name: Restore Uber auth
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force playwright/.auth
@@ -27,15 +26,4 @@ jobs:
             playwright\.auth\user.json `
             -Force
 
-      - name: Verify auth
-        shell: pwsh
-        run: Test-Path playwright\.auth\user.json
-
-      - name: Run Uber Sync
-        run: npx tsx uber-sync.ts
-
-      - name: Run Rocket Sync
-        run: npx tsx rocket-sync.ts
-
-      - name: Run Menu Sync
-        run: npx tsx menu-sync.ts
+      - run: npx tsx uber-sync.ts
