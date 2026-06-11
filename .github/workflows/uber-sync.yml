@@ -1,44 +1,40 @@
-name: Uber Eats Sync
+name: Uber Sync
 
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "**.yml"
   workflow_dispatch:
 
 jobs:
   uber-sync:
+    if: github.actor != 'github-actions[bot]'
     runs-on: [self-hosted, windows]
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Uber Eats Sync
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: npx tsx uber-sync.ts
-
-      - name: Commit changes (if any)
+      - name: Restore Uber auth
+        shell: pwsh
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          New-Item -ItemType Directory -Force playwright/.auth
 
-          git add .
+          Copy-Item `
+            "$env:GITHUB_WORKSPACE\playwright\.auth\user.json" `
+            "playwright\.auth\user.json" `
+            -Force
 
-          git diff --cached --quiet || git commit -m "uber eats sync update"
-
-      - name: Push changes
-        run: git push
+      - name: Run Uber Sync
+        run: npx tsx uber-sync.ts
