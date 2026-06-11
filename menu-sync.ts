@@ -1,10 +1,9 @@
 import { chromium, type Browser } from "playwright"
 import { createClient } from "@supabase/supabase-js"
-import * as fs from "fs"
-import * as path from "path"
-import "dotenv/config"
+import fs from "fs"
 
 const AUTH_FILE = "playwright/.auth/menu.json"
+
 const MENU_REPORT_URL =
   "https://management.console.menu.inc/chain/orderReport/list?target_month=2026-06&shop_id=143836"
 
@@ -15,7 +14,14 @@ if (!supabaseUrl || !supabaseKey) {
   throw new Error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY")
 }
 
-const supabase = createClient(supabaseUrl, supabaseKey)
+/**
+ * Supabase client (Node 20 safe)
+ */
+const supabase = createClient(supabaseUrl, supabaseKey, {
+  realtime: {
+    enabled: false
+  }
+})
 
 function jstToUtcIso(dateText: string, timeText: string) {
   return new Date(`${dateText}T${timeText}:00+09:00`).toISOString()
@@ -54,21 +60,21 @@ async function main() {
   try {
     browser = await chromium.launch({
       channel: "chrome",
-      headless: true,
+      headless: true
     })
 
     const context = await browser.newContext({
       storageState: AUTH_FILE,
       timezoneId: "Asia/Tokyo",
       locale: "ja-JP",
-      viewport: { width: 1440, height: 900 },
+      viewport: { width: 1440, height: 900 }
     })
 
     const page = await context.newPage()
 
     await page.goto(MENU_REPORT_URL, {
       waitUntil: "domcontentloaded",
-      timeout: 90000,
+      timeout: 90000
     })
 
     await page.waitForTimeout(7000)
@@ -78,16 +84,6 @@ async function main() {
 
     if (url.includes("login") || url.includes("signin")) {
       throw new Error("Menu session expired. Run npm run menu:auth again.")
-    }
-
-    const bodyText = await page.locator("body").innerText()
-
-    if (
-      bodyText.includes("ログイン") ||
-      bodyText.includes("メールアドレス") ||
-      bodyText.includes("パスワード")
-    ) {
-      throw new Error("Menu login page detected. Run npm run menu:auth again.")
     }
 
     const rows = await page.locator("table tbody tr").all()
@@ -136,7 +132,7 @@ async function main() {
         total,
         items,
         raw_data: { cells: c },
-        scraped_at: new Date().toISOString(),
+        scraped_at: new Date().toISOString()
       })
 
       console.log(
@@ -150,9 +146,11 @@ async function main() {
     console.log(`Parsed orders: ${orders.length}`)
 
     if (orders.length > 0) {
-      const { error } = await supabase.from("delivery_orders").upsert(orders, {
-        onConflict: "platform,order_id",
-      })
+      const { error } = await supabase
+        .from("delivery_orders")
+        .upsert(orders, {
+          onConflict: "platform,order_id"
+        })
 
       if (error) throw error
     }

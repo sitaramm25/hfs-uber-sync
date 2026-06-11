@@ -1,0 +1,4195 @@
+[2026-06-11 08:13:19Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Runner': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.runner'
+[2026-06-11 08:13:19Z INFO Worker] Version: 2.334.0
+[2026-06-11 08:13:19Z INFO Worker] Commit: f1995ede5d885c997d13d8eca5467c4ce97fe69c
+[2026-06-11 08:13:19Z INFO Worker] Culture: ja-JP
+[2026-06-11 08:13:19Z INFO Worker] UI Culture: ja-JP
+[2026-06-11 08:13:19Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-06-11 08:13:19Z INFO ProcessChannel] Receiving message of length 22461, with hash '3dbce1d1ebb7a1b04ebcb079b5439af941dfd53600114663c73fda6af87adfeb'
+[2026-06-11 08:13:19Z INFO Worker] Message received.
+[2026-06-11 08:13:19Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/menu-sync.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 14,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 14,
+              "col": 11,
+              "lit": "fetch-depth"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 14,
+              "col": 24,
+              "lit": "0"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "c7353000-842c-4838-bb97-98880b19c995",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 18,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 11,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 25,
+              "lit": "20"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 19,
+              "col": 11,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 19,
+              "col": 18,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "d06d3543-7a8f-4f47-b009-46a62f9cdef5",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 14,
+              "lit": "npm ci"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "dac8e4a8-2233-4052-bb62-07700e6438f7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 23,
+        "col": 15,
+        "lit": "Run Menu Sync"
+      },
+      "contextName": "__run_2",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 25,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 11,
+              "lit": "SUPABASE_URL"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 25,
+              "col": 25,
+              "expr": "secrets.SUPABASE_URL"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 11,
+              "lit": "SUPABASE_SERVICE_ROLE_KEY"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 26,
+              "col": 38,
+              "expr": "secrets.SUPABASE_SERVICE_ROLE_KEY"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 14,
+              "lit": "npx tsx menu-sync.ts"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "d3001228-80eb-4c0a-b9f0-ab7daa242bd3",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 29,
+        "col": 15,
+        "lit": "Commit changes"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 30,
+              "col": 14,
+              "lit": "git config user.name \"github-actions[bot]\"\ngit config user.email \"github-actions[bot]@users.noreply.github.com\"\ngit add .\n\ngit diff --cached --quiet || git commit -m \"menu sync update\"\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "d2772c70-1b31-415c-8dd3-7a10f5303f20",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 37,
+        "col": 15,
+        "lit": "Push changes"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 38,
+              "col": 14,
+              "lit": "git push"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "27503b12-bf32-4953-8bbe-86f04b9150de",
+      "name": "__run_4"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "value": "***",
+      "isSecret": true
+    },
+    "SUPABASE_URL": {
+      "value": "***",
+      "isSecret": true
+    },
+    "actions.runner.requirenode24": {
+      "value": "false"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "false"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "false"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": ""
+    },
+    "actions_runner_node24_default_date": {
+      "value": "June 16th, 2026"
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "menu-sync"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "be90b34b-551a-43b8-aa4c-6816c4282f18.menu-sync.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "menu-sync"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "be90b34b-551a-43b8-aa4c-6816c4282f18",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "be90b34b-551a-43b8-aa4c-6816c4282f18",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "5f6fa358-e879-5701-b620-cc3ac40743ea",
+  "jobDisplayName": "menu-sync",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/T27dm1oo1vVbbW7Joieg9XHLkdhSlKdo9VaKMuZ3I9naEyan9h/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/T27dm1oo1vVbbW7Joieg9XHLkdhSlKdo9VaKMuZ3I9naEyan9h/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/18/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "c1a5a59db9f263327ea502e5ff428b4cc49e5ff4"
+        },
+        {
+          "k": "repository",
+          "v": "sitaramm25/hfs-uber-sync"
+        },
+        {
+          "k": "repository_owner",
+          "v": "sitaramm25"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "57124156"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/sitaramm25/hfs-uber-sync.git"
+        },
+        {
+          "k": "run_id",
+          "v": "27333330688"
+        },
+        {
+          "k": "run_number",
+          "v": "83"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "57124156"
+        },
+        {
+          "k": "actor",
+          "v": "sitaramm25"
+        },
+        {
+          "k": "workflow",
+          "v": "Menu Sync"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "workflow_dispatch"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "workflow",
+                "v": ".github/workflows/menu-sync.yml"
+              },
+              {
+                "k": "inputs",
+                "v": null
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "id",
+                      "v": 1252269342.0
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOSqQdHg"
+                    },
+                    {
+                      "k": "name",
+                      "v": "hfs-uber-sync"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "sitaramm25/hfs-uber-sync"
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "login",
+                            "v": "sitaramm25"
+                          },
+                          {
+                            "k": "id",
+                            "v": 57124156.0
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjU3MTI0MTU2"
+                          },
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/57124156?v=4"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/sitaramm25"
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/sitaramm25"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/sitaramm25/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/sitaramm25/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/sitaramm25/gists{/gist_id}"
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/sitaramm25/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/sitaramm25/subscriptions"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/sitaramm25/orgs"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/sitaramm25/repos"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/sitaramm25/events{/privacy}"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/sitaramm25/received_events"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/sitaramm25/hfs-uber-sync"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync"
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/forks"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/keys{/key_id}"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/teams"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/hooks"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/issues/events{/number}"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/events"
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/assignees{/user}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/branches{/branch}"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/tags"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/git/refs{/sha}"
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/git/trees{/sha}"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/statuses/{sha}"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/languages"
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/stargazers"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/contributors"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/subscription"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/commits{/sha}"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/git/commits{/sha}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/comments{/number}"
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/issues/comments{/number}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/contents/{+path}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/merges"
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/downloads"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/issues{/number}"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/pulls{/number}"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/milestones{/number}"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/labels{/name}"
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/releases{/id}"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/sitaramm25/hfs-uber-sync/deployments"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": "2026-05-28T10:59:08Z"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-06-11T07:37:10Z"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": "2026-06-11T07:37:06Z"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/sitaramm25/hfs-uber-sync.git"
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:sitaramm25/hfs-uber-sync.git"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/sitaramm25/hfs-uber-sync.git"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/sitaramm25/hfs-uber-sync"
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "size",
+                      "v": 41.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "language",
+                      "v": "TypeScript"
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "login",
+                      "v": "sitaramm25"
+                    },
+                    {
+                      "k": "id",
+                      "v": 57124156.0
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjU3MTI0MTU2"
+                    },
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/57124156?v=4"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/sitaramm25"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/sitaramm25"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/sitaramm25/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/sitaramm25/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/sitaramm25/gists{/gist_id}"
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/sitaramm25/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/sitaramm25/subscriptions"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/sitaramm25/orgs"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/sitaramm25/repos"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/sitaramm25/events{/privacy}"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/sitaramm25/received_events"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "sitaramm25/hfs-uber-sync/.github/workflows/menu-sync.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "c1a5a59db9f263327ea502e5ff428b4cc49e5ff4"
+        },
+        {
+          "k": "repository_id",
+          "v": "1252269342"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "sitaramm25"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 80750994101.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "sitaramm25/hfs-uber-sync/.github/workflows/menu-sync.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "c1a5a59db9f263327ea502e5ff428b4cc49e5ff4"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "sitaramm25/hfs-uber-sync"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/menu-sync.yml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOA2elPA"
+}
+[2026-06-11 08:13:19Z INFO JobRunner] Job ID 5f6fa358-e879-5701-b620-cc3ac40743ea
+[2026-06-11 08:13:19Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin\Runner.Worker.dll
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] binPath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] RootFolder: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Runner': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.runner'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] ConfigFilePath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.runner
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.runner_migrated'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.runner_migrated
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] CredFilePath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials_migrated'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials_migrated
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Service': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.service'
+[2026-06-11 08:13:19Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.service
+[2026-06-11 08:13:19Z INFO ConfigurationStore] Read setting file: 401 chars
+[2026-06-11 08:13:19Z INFO JobRunner] Initializing launch client
+[2026-06-11 08:13:19Z INFO JobServerQueue] Initializing results client
+[2026-06-11 08:13:19Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-06-11 08:13:19Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-06-11 08:13:19Z INFO JobServerQueue] Start process web console line queue.
+[2026-06-11 08:13:19Z INFO JobServerQueue] Start process file upload queue.
+[2026-06-11 08:13:19Z INFO JobServerQueue] Start results file upload queue.
+[2026-06-11 08:13:19Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-06-11 08:13:19Z INFO JobServerQueue] Start process timeline update queue.
+[2026-06-11 08:13:19Z INFO ExecutionContext] Initializing Job context
+[2026-06-11 08:13:19Z INFO ExecutionContext] Initialize GitHub context
+[2026-06-11 08:13:19Z INFO ExecutionContext] Initialize Env context
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:19Z INFO JobRunner] Starting the job execution context.
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO JobRunner] Validating directory permissions for: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Tools': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_tool'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:19Z INFO JobRunner] Getting job extension.
+[2026-06-11 08:13:19Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.credentials'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\.setup_info'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_PipelineMapping\sitaramm25/hfs-uber-sync\PipelineFolder.json
+[2026-06-11 08:13:19Z INFO PipelineDirectoryManager] Updating job run properties.
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO JobExtension] Downloading actions
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:19Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:20Z INFO Worker] Listening for cancel message from the channel.
+[2026-06-11 08:13:20Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-06-11 08:13:20Z INFO ResultServer] Successfully started websocket client.
+[2026-06-11 08:13:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f4b51895-9c51-4fe0-b5b6-e900b5a8757f', success rate: 1/1.
+[2026-06-11 08:13:21Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:21Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:21Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5' into C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\_temp_49cbf6b9-3321-416e-b34f-62a0d70ccab3\6d6016b5-c496-4f57-9743-b7f6934db9c7.zip.
+[2026-06-11 08:13:21Z INFO ActionManager] Using Basic token for action archive download.
+[2026-06-11 08:13:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f4b51895-9c51-4fe0-b5b6-e900b5a8757f', success rate: 1/1.
+[2026-06-11 08:13:22Z INFO ActionManager] Request URL: https://codeload.github.com/actions/checkout/zip/34e114876b0b11c390a56381ad16ebd13914f8d5 X-GitHub-Request-Id: F157:21524C:30F3D:8603D:6A2A6E21 Http Status: OK
+[2026-06-11 08:13:22Z INFO ActionManager] Finished getting action repository.
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:22Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:22Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/setup-node/zip/49933ea5288caeca8642d1e84afbd3f7d6820020' into C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\_temp_605f797e-e419-4922-b226-cd0b7022c690\10b77fcb-edac-4dd9-83d9-e9c0e7aedcc6.zip.
+[2026-06-11 08:13:22Z INFO ActionManager] Using Basic token for action archive download.
+[2026-06-11 08:13:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f4b51895-9c51-4fe0-b5b6-e900b5a8757f', success rate: 1/1.
+[2026-06-11 08:13:23Z INFO ActionManager] Request URL: https://codeload.github.com/actions/setup-node/zip/49933ea5288caeca8642d1e84afbd3f7d6820020 X-GitHub-Request-Id: F158:1C8707:2E055:83150:6A2A6E22 Http Status: OK
+[2026-06-11 08:13:23Z INFO ActionManager] Finished getting action repository.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-06-11 08:13:23Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:23Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManager] Load action that reference repository from 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:23Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-11 08:13:23Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-11 08:13:23Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:23Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManager] Load action that reference repository from 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\setup-node\v4'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:23Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-11 08:13:23Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2026-06-11 08:13:23Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO JobExtension] Adding .
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO JobExtension] Total accessible running process: 305.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO JobExtension] Start checking server connectivity.
+[2026-06-11 08:13:23Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-06-11 08:13:23Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-06-11 08:13:23Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-06-11 08:13:23Z INFO JobExtension] Start checking service connectivity in background.
+[2026-06-11 08:13:23Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "f4b51895-9c51-4fe0-b5b6-e900b5a8757f",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 5,
+  "startTime": "2026-06-11T08:13:19.7216497Z",
+  "finishTime": "2026-06-11T08:13:23.8032536Z"
+}.
+[2026-06-11 08:13:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f4b51895-9c51-4fe0-b5b6-e900b5a8757f', success rate: 1/1.
+[2026-06-11 08:13:23Z INFO JobRunner] Total job steps: 6.
+[2026-06-11 08:13:23Z INFO JobRunner] Run all job steps.
+[2026-06-11 08:13:23Z INFO DapDebugger] DapDebugger initialized
+[2026-06-11 08:13:23Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v4'
+[2026-06-11 08:13:23Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:23Z INFO StepsRunner] Result: true
+[2026-06-11 08:13:23Z INFO StepsRunner] Starting the step.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-11 08:13:23Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] Process started with process id 8052, waiting for process exit.
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] Finished process 8052 with exit code 0, and elapsed time 00:00:00.0576265.
+[2026-06-11 08:13:23Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManager] Load action that reference repository from 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:23Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-11 08:13:23Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-11 08:13:23Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-11 08:13:23Z INFO ExecutionContext] Reserve record order 8 to 14 for post job actions.
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:23Z INFO ExecutionContext] Write event payload to C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:23Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "sitaramm25/hfs-uber-sync"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:23Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-06-11 08:13:23Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-11 08:13:23Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:23Z INFO HostContext] Well known directory 'Externals': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals\node20\bin\node.exe'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\hfs-uber-sync\hfs-uber-sync'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:23Z INFO ProcessInvokerWrapper] Process started with process id 21488, waiting for process exit.
+[2026-06-11 08:13:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:24Z INFO AddMaskCommandExtension] Add new secret mask with length of 588
+[2026-06-11 08:13:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:24Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:24Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_f4b51895-9c51-4fe0-b5b6-e900b5a8757f.1
+[2026-06-11 08:13:24Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-11 08:13:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:26Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-11 08:13:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Finished process 21488 with exit code 0, and elapsed time 00:00:05.8176318.
+[2026-06-11 08:13:29Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_08fdcf89-e68f-4386-a778-c207e56d1aad) is empty; skipping attachment upload
+[2026-06-11 08:13:29Z INFO StepsRunner] Step result: 
+[2026-06-11 08:13:29Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "c7353000-842c-4838-bb97-98880b19c995",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [
+    "no submodule mapping found in .gitmodules for path 'actions-runner/_work/hfs-uber-sync/hfs-uber-sync'",
+    "Unable to clean or reset the repository. The repository will be recreated instead."
+  ],
+  "executionTimeInSeconds": 6,
+  "startTime": "2026-06-11T08:13:23.8184065Z",
+  "finishTime": "2026-06-11T08:13:29.7861184Z"
+}.
+[2026-06-11 08:13:29Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-11 08:13:29Z INFO StepsRunner] Current state: job state = ''
+[2026-06-11 08:13:29Z INFO StepsRunner] Processing step: DisplayName='Run actions/setup-node@v4'
+[2026-06-11 08:13:29Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:29Z INFO StepsRunner] Result: true
+[2026-06-11 08:13:29Z INFO StepsRunner] Starting the step.
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-11 08:13:29Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Process started with process id 19636, waiting for process exit.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Finished process 19636 with exit code 0, and elapsed time 00:00:00.0085261.
+[2026-06-11 08:13:29Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:29Z INFO ActionManager] Load action that reference repository from 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\setup-node\v4'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Ignore action property author.
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:29Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-11 08:13:29Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2026-06-11 08:13:29Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:29Z INFO ExecutionContext] Write event payload to C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:29Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'always-auth': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 7,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'node-version-file': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'architecture': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'check-latest': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 16,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'registry-url': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'scope': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 23,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'cache-dependency-path': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'mirror': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ActionManifestManagerLegacy] Input 'mirror-token': default value evaluate result: ""
+[2026-06-11 08:13:29Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-11 08:13:29Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:29Z INFO HostContext] Well known directory 'Externals': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals\node20\bin\node.exe'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\setup-node\v4\dist/setup/index.js"'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\hfs-uber-sync\hfs-uber-sync'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:29Z INFO ProcessInvokerWrapper] Process started with process id 5804, waiting for process exit.
+[2026-06-11 08:13:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c7353000-842c-4838-bb97-98880b19c995', success rate: 1/1.
+[2026-06-11 08:13:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd06d3543-7a8f-4f47-b009-46a62f9cdef5', success rate: 1/1.
+[2026-06-11 08:13:30Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:30Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_c7353000-842c-4838-bb97-98880b19c995.1
+[2026-06-11 08:13:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd06d3543-7a8f-4f47-b009-46a62f9cdef5', success rate: 1/1.
+[2026-06-11 08:13:30Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-11 08:13:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd06d3543-7a8f-4f47-b009-46a62f9cdef5', success rate: 1/1.
+[2026-06-11 08:13:31Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-11 08:13:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd06d3543-7a8f-4f47-b009-46a62f9cdef5', success rate: 1/1.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Finished process 5804 with exit code 0, and elapsed time 00:00:02.5144550.
+[2026-06-11 08:13:32Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_e6762a81-5667-4e55-9b2c-ca10772ffd85) is empty; skipping attachment upload
+[2026-06-11 08:13:32Z INFO StepsRunner] Step result: 
+[2026-06-11 08:13:32Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/setup-node",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "d06d3543-7a8f-4f47-b009-46a62f9cdef5",
+  "stepContextName": "__actions_setup-node",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2026-06-11T08:13:29.7882688Z",
+  "finishTime": "2026-06-11T08:13:32.3274957Z"
+}.
+[2026-06-11 08:13:32Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-11 08:13:32Z INFO StepsRunner] Current state: job state = ''
+[2026-06-11 08:13:32Z INFO StepsRunner] Processing step: DisplayName='Run npm ci'
+[2026-06-11 08:13:32Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:32Z INFO StepsRunner] Result: true
+[2026-06-11 08:13:32Z INFO StepsRunner] Starting the step.
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:32Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-11 08:13:32Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Process started with process id 8108, waiting for process exit.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Finished process 8108 with exit code 0, and elapsed time 00:00:00.0087948.
+[2026-06-11 08:13:32Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:32Z INFO ExecutionContext] Write event payload to C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-11 08:13:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-11 08:13:32Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-11 08:13:32Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-11 08:13:32Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-11 08:13:32Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-11 08:13:32Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-11 08:13:32Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:32Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:32Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-11 08:13:32Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-11 08:13:32Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-11 08:13:32Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-11 08:13:32Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\3f0476af-d11d-4164-a1ca-5ae8e91c84b7.ps1'"'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\hfs-uber-sync\hfs-uber-sync'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:32Z INFO ProcessInvokerWrapper] Process started with process id 8004, waiting for process exit.
+[2026-06-11 08:13:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd06d3543-7a8f-4f47-b009-46a62f9cdef5', success rate: 1/1.
+[2026-06-11 08:13:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dac8e4a8-2233-4052-bb62-07700e6438f7', success rate: 1/1.
+[2026-06-11 08:13:32Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-11 08:13:33Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:33Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_d06d3543-7a8f-4f47-b009-46a62f9cdef5.1
+[2026-06-11 08:13:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:33Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Finished process 8004 with exit code 0, and elapsed time 00:00:01.8840299.
+[2026-06-11 08:13:34Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_6b34218b-d5e9-45f5-a2f4-b570ec5d6387) is empty; skipping attachment upload
+[2026-06-11 08:13:34Z INFO StepsRunner] Step result: 
+[2026-06-11 08:13:34Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "dac8e4a8-2233-4052-bb62-07700e6438f7",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2026-06-11T08:13:32.3286777Z",
+  "finishTime": "2026-06-11T08:13:34.2519392Z"
+}.
+[2026-06-11 08:13:34Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-11 08:13:34Z INFO StepsRunner] Current state: job state = ''
+[2026-06-11 08:13:34Z INFO StepsRunner] Processing step: DisplayName='Run Menu Sync'
+[2026-06-11 08:13:34Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:34Z INFO StepsRunner] Result: true
+[2026-06-11 08:13:34Z INFO StepsRunner] Starting the step.
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-11 08:13:34Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Process started with process id 6196, waiting for process exit.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Finished process 6196 with exit code 0, and elapsed time 00:00:00.0142331.
+[2026-06-11 08:13:34Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:34Z INFO ExecutionContext] Write event payload to C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:34Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-11 08:13:34Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-11 08:13:34Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-11 08:13:34Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-11 08:13:34Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-11 08:13:34Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-11 08:13:34Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-11 08:13:34Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:34Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:34Z INFO ScriptHandler] Which2: 'pwsh'
+[2026-06-11 08:13:34Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2026-06-11 08:13:34Z INFO ScriptHandler] Defaulting to powershell
+[2026-06-11 08:13:34Z INFO ScriptHandler] Which2: 'powershell'
+[2026-06-11 08:13:34Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\ebee41bb-1dcf-4ee8-b6e4-2d239e720164.ps1'"'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\hfs-uber-sync\hfs-uber-sync'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:34Z INFO ProcessInvokerWrapper] Process started with process id 22168, waiting for process exit.
+[2026-06-11 08:13:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dac8e4a8-2233-4052-bb62-07700e6438f7', success rate: 1/1.
+[2026-06-11 08:13:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd3001228-80eb-4c0a-b9f0-ab7daa242bd3', success rate: 1/1.
+[2026-06-11 08:13:34Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-11 08:13:35Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:35Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_dac8e4a8-2233-4052-bb62-07700e6438f7.1
+[2026-06-11 08:13:36Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Finished process 22168 with exit code 1, and elapsed time 00:00:03.7800976.
+[2026-06-11 08:13:38Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_a0a2c9c8-58ed-4e1d-aa14-7d40d378dd20) is empty; skipping attachment upload
+[2026-06-11 08:13:38Z INFO StepsRunner] Step result: Failed
+[2026-06-11 08:13:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "d3001228-80eb-4c0a-b9f0-ab7daa242bd3",
+  "stepContextName": "__run_2",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 4,
+  "startTime": "2026-06-11T08:13:34.2527395Z",
+  "finishTime": "2026-06-11T08:13:38.0675341Z"
+}.
+[2026-06-11 08:13:38Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-06-11 08:13:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-11 08:13:38Z INFO StepsRunner] Processing step: DisplayName='Commit changes'
+[2026-06-11 08:13:38Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:38Z INFO StepsRunner] Result: false
+[2026-06-11 08:13:38Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-11 08:13:38Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-11 08:13:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-11 08:13:38Z INFO StepsRunner] Processing step: DisplayName='Push changes'
+[2026-06-11 08:13:38Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:38Z INFO StepsRunner] Result: false
+[2026-06-11 08:13:38Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-11 08:13:38Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-11 08:13:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-11 08:13:38Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/setup-node@v4'
+[2026-06-11 08:13:38Z INFO StepsRunner] Evaluating: success()
+[2026-06-11 08:13:38Z INFO StepsRunner] Result: false
+[2026-06-11 08:13:38Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-06-11 08:13:38Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-06-11 08:13:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-11 08:13:38Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v4'
+[2026-06-11 08:13:38Z INFO StepsRunner] Evaluating: always()
+[2026-06-11 08:13:38Z INFO StepsRunner] Result: true
+[2026-06-11 08:13:38Z INFO StepsRunner] Starting the step.
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO StepsRunner] Which2: 'chcp'
+[2026-06-11 08:13:38Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Process started with process id 19396, waiting for process exit.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Finished process 19396 with exit code 0, and elapsed time 00:00:00.0090353.
+[2026-06-11 08:13:38Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:38Z INFO ActionManager] Load action that reference repository from 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions'
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-06-11 08:13:38Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-06-11 08:13:38Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-06-11 08:13:38Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:38Z INFO ExecutionContext] Write event payload to C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp'
+[2026-06-11 08:13:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "sitaramm25/hfs-uber-sync"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-06-11 08:13:38Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-06-11 08:13:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command error
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command group
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-06-11 08:13:38Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:38Z INFO HostContext] Well known directory 'Externals': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\externals\node20\bin\node.exe'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\hfs-uber-sync\hfs-uber-sync'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-06-11 08:13:38Z INFO ProcessInvokerWrapper] Process started with process id 14528, waiting for process exit.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd3001228-80eb-4c0a-b9f0-ab7daa242bd3', success rate: 1/1.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0d7b3f6c-f03b-438d-87c5-126bbb91f3da', success rate: 1/1.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_d3001228-80eb-4c0a-b9f0-ab7daa242bd3.1
+[2026-06-11 08:13:38Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2026-06-11 08:13:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0d7b3f6c-f03b-438d-87c5-126bbb91f3da', success rate: 1/1.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0d7b3f6c-f03b-438d-87c5-126bbb91f3da', success rate: 1/1.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-06-11 08:13:38Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-06-11 08:13:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-06-11 08:13:39Z INFO ProcessInvokerWrapper] Finished process 14528 with exit code 0, and elapsed time 00:00:01.0582394.
+[2026-06-11 08:13:39Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_4f2ebad6-1d99-4d58-b25c-792a6e173ae3) is empty; skipping attachment upload
+[2026-06-11 08:13:39Z INFO StepsRunner] Step result: 
+[2026-06-11 08:13:39Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "0d7b3f6c-f03b-438d-87c5-126bbb91f3da",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2026-06-11T08:13:38.0707577Z",
+  "finishTime": "2026-06-11T08:13:39.1539066Z"
+}.
+[2026-06-11 08:13:39Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-06-11 08:13:39Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-06-11 08:13:39Z INFO JobRunner] Finalize job.
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:39Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:39Z INFO JobExtension] Initialize Env context
+[2026-06-11 08:13:39Z INFO JobExtension] Initialize steps context
+[2026-06-11 08:13:39Z INFO JobExtension] Total accessible running process: 305.
+[2026-06-11 08:13:39Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-06-11 08:13:39Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-11 08:13:39Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-11 08:13:39Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-06-11 08:13:39Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "a6694e04-78b7-403c-828d-a1426cba286b",
+  "result": "succeeded",
+  "errorMessages": [
+    "Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will "
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-06-11T08:13:39.1605301Z",
+  "finishTime": "2026-06-11T08:13:39.1737414Z"
+}.
+[2026-06-11 08:13:39Z INFO JobRunner] Job result after all job steps finish: Failed
+[2026-06-11 08:13:39Z INFO JobRunner] Completing the job execution context.
+[2026-06-11 08:13:39Z INFO JobRunner] Shutting down the job server queue.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-06-11 08:13:39Z INFO JobServerQueue] All queue process task stopped.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0d7b3f6c-f03b-438d-87c5-126bbb91f3da', success rate: 1/1.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a6694e04-78b7-403c-828d-a1426cba286b', success rate: 1/1.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Web console line queue drained.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-06-11 08:13:39Z INFO JobServerQueue] File upload queue drained.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-06-11 08:13:39Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_0d7b3f6c-f03b-438d-87c5-126bbb91f3da.1
+[2026-06-11 08:13:40Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-06-11 08:13:40Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_a6694e04-78b7-403c-828d-a1426cba286b.1
+[2026-06-11 08:13:41Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-06-11 08:13:41Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\blocks\be90b34b-551a-43b8-aa4c-6816c4282f18_5f6fa358-e879-5701-b620-cc3ac40743ea.1
+[2026-06-11 08:13:42Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-06-11 08:13:42Z INFO JobServerQueue] Results upload queue drained.
+[2026-06-11 08:13:42Z INFO JobServerQueue] Timeline update queue drained.
+[2026-06-11 08:13:42Z INFO JobServerQueue] Disposing job server ...
+[2026-06-11 08:13:42Z INFO JobServerQueue] Disposing results server ...
+[2026-06-11 08:13:42Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-06-11 08:13:42Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_work\_temp
+[2026-06-11 08:13:42Z INFO HostContext] Well known directory 'Bin': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\bin'
+[2026-06-11 08:13:42Z INFO HostContext] Well known directory 'Root': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner'
+[2026-06-11 08:13:42Z INFO HostContext] Well known directory 'Diag': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag'
+[2026-06-11 08:13:42Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\highf\Downloads\hfs\actions-runner\actions-runner\_diag\.telemetry'
+[2026-06-11 08:13:42Z INFO JobRunner] Raising job completed against run service
+[2026-06-11 08:13:43Z INFO Worker] Job completed.
