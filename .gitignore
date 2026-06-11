@@ -11,3 +11,15 @@ screenshots/
 uber-body.txt
 uber-page.html
 uber-orders.json
+# GitHub Actions runner (IMPORTANT)
+actions-runner/
+
+# logs
+*.log
+
+# node
+node_modules/
+
+# build
+dist/
+build/
